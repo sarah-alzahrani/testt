@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/metasemap/ontology#"
+     xml:base="http://w3id.org/metasemap/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://w3id.org/metasemap/ontology">
+        <owl:versionIRI rdf:resource="http://w3id.org/metasemap/ontology/0.1"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-20130430"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <terms:creator>Sarah Alzahrani</terms:creator>
+        <terms:description>An ontology for annotating mapping projects across their lifecycle (analysis, design, development, testing, maintenance) and mapping types (alignment, uplift, interlinking).</terms:description>
+        <terms:issued>2025-10-23</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>TCD</terms:publisher>
+        <terms:title>MetaSEMAP Ontology</terms:title>
+        <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/metasemap/ontology#"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:TestingActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasAnalysis -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasAnalysis">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:AnalysisActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasAssessment -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasAssessment">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingArtifact"/>
+        <rdfs:comment>Links a mapping artifact to an MQV assessment instance</rdfs:comment>
+        <rdfs:label>has assessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasDesign -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasDesign">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:DesignActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasDesignDecision -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasDesignDecision">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:DesignActivity"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:DesignDecision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasDevelopment -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasDevelopment">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasInput">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:InputDataset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasMaintenance -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasMaintenance">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:MaintenanceActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasQualityIssue -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasQualityIssue">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingArtifact"/>
+        <rdfs:comment>Links a mapping artifact to a detected MQV quality issue.</rdfs:comment>
+        <rdfs:label>has quality issue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasStakeholder -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasStakeholder">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasTesting -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasTesting">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:TestingActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:hasValidation -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:hasValidation">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingArtifact"/>
+        <rdfs:comment>Links a mapping artifact to an MQV validation instance.</rdfs:comment>
+        <rdfs:label>has validation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:producedMapping -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:producedMapping">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingProject"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:MappingArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:usesTool -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/metasemap/ontology#ms:usesTool">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://w3id.org/metasemap/ontology#ms:tool"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#used"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment>Tool used during a mapping activity.</rdfs:comment>
+        <rdfs:label>uses tool</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:domainAssumption -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:domainAssumption">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:AnalysisActivity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:justification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:justification">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:DesignActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:mappingAlgorithm -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:mappingAlgorithm">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:mappingMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:mappingMethod">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:requirements -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:requirements">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:AnalysisActivity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:riskOrIssue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:riskOrIssue">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:AnalysisActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:technicalRequirement -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/metasemap/ontology#ms:technicalRequirement">
+        <rdfs:domain rdf:resource="http://w3id.org/metasemap/ontology#ms:AnalysisActivity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:AnalysisActivity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>The phase where mapping requirements and domains are analyzed</rdfs:comment>
+        <rdfs:label>Analysis Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:DesignActivity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:DesignActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>The phase defining mapping strategies, structures, and vocabularies.</rdfs:comment>
+        <rdfs:label>Design Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:DesignDecision -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:DesignDecision">
+        <rdfs:comment>A documented design choice during the mapping creation process</rdfs:comment>
+        <rdfs:label>Design Decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:DevelopmentActivity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>The phase where the mapping is implemented.</rdfs:comment>
+        <rdfs:label>Development Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:InputDataset -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:InputDataset">
+        <rdfs:comment>A dataset used as an input for generating or validating a mapping.</rdfs:comment>
+        <rdfs:label>Input Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:MaintenanceActivity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:MaintenanceActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>The phase involving updates, versioning, and evolution of mappings.</rdfs:comment>
+        <rdfs:label>Maintenance Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:MappingArtifact -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:MappingArtifact">
+        <rdfs:comment>A declarative mapping file</rdfs:comment>
+        <rdfs:label>Mapping Artifact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:MappingProject -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:MappingProject">
+        <rdfs:comment>A project that governs one or more mapping artifacts through their lifecycle</rdfs:comment>
+        <rdfs:label>Mapping Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:TestingActivity -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:TestingActivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>The phase validating the mapping correctness and output</rdfs:comment>
+        <rdfs:label>Testing Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology#ms:tool -->
+
+
+    <owl:Class rdf:about="http://w3id.org/metasemap/ontology#ms:tool">
+        <rdfs:comment>Software used in mapping activities (e.g., RMLMapper, SILK).</rdfs:comment>
+        <rdfs:label>Tool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/metasemap/ontology -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/metasemap/ontology">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,285 @@
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/metasemap/ontology/0.1> .
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-20130430> .
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://w3id.org/metasemap/ontology> <http://purl.org/dc/terms/creator> "Sarah Alzahrani" .
+<http://w3id.org/metasemap/ontology> <http://purl.org/dc/terms/description> "An ontology for annotating mapping projects across their lifecycle (analysis, design, development, testing, maintenance) and mapping types (alignment, uplift, interlinking)." .
+<http://w3id.org/metasemap/ontology> <http://purl.org/dc/terms/issued> "2025-10-23" .
+<http://w3id.org/metasemap/ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/metasemap/ontology> <http://purl.org/dc/terms/publisher> "TCD" .
+<http://w3id.org/metasemap/ontology> <http://purl.org/dc/terms/title> "MetaSEMAP Ontology" .
+<http://w3id.org/metasemap/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ms" .
+<http://w3id.org/metasemap/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/metasemap/ontology#> .
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement
+<http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:TestingActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasAnalysis
+<http://w3id.org/metasemap/ontology#ms:hasAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:AnalysisActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasAssessment
+<http://w3id.org/metasemap/ontology#ms:hasAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasAssessment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingArtifact> .
+<http://w3id.org/metasemap/ontology#ms:hasAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a mapping artifact to an MQV assessment instance" .
+<http://w3id.org/metasemap/ontology#ms:hasAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "has assessment" .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasDesign
+<http://w3id.org/metasemap/ontology#ms:hasDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasDesign> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasDesign> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:DesignActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasDesignDecision
+<http://w3id.org/metasemap/ontology#ms:hasDesignDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasDesignDecision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:DesignActivity> .
+<http://w3id.org/metasemap/ontology#ms:hasDesignDecision> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:DesignDecision> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasDevelopment
+<http://w3id.org/metasemap/ontology#ms:hasDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasDevelopment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasDevelopment> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasInput
+<http://w3id.org/metasemap/ontology#ms:hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:InputDataset> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasMaintenance
+<http://w3id.org/metasemap/ontology#ms:hasMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasMaintenance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasMaintenance> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:MaintenanceActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasQualityIssue
+<http://w3id.org/metasemap/ontology#ms:hasQualityIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasQualityIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingArtifact> .
+<http://w3id.org/metasemap/ontology#ms:hasQualityIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a mapping artifact to a detected MQV quality issue." .
+<http://w3id.org/metasemap/ontology#ms:hasQualityIssue> <http://www.w3.org/2000/01/rdf-schema#label> "has quality issue" .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasStakeholder
+<http://w3id.org/metasemap/ontology#ms:hasStakeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasStakeholder> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasTesting
+<http://w3id.org/metasemap/ontology#ms:hasTesting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasTesting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:hasTesting> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:TestingActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:hasValidation
+<http://w3id.org/metasemap/ontology#ms:hasValidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:hasValidation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingArtifact> .
+<http://w3id.org/metasemap/ontology#ms:hasValidation> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a mapping artifact to an MQV validation instance." .
+<http://w3id.org/metasemap/ontology#ms:hasValidation> <http://www.w3.org/2000/01/rdf-schema#label> "has validation" .
+# 
+# http://w3id.org/metasemap/ontology#ms:producedMapping
+<http://w3id.org/metasemap/ontology#ms:producedMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:producedMapping> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:MappingProject> .
+<http://w3id.org/metasemap/ontology#ms:producedMapping> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:MappingArtifact> .
+# 
+# http://w3id.org/metasemap/ontology#ms:usesTool
+<http://w3id.org/metasemap/ontology#ms:usesTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/metasemap/ontology#ms:usesTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/metasemap/ontology#ms:usesTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/metasemap/ontology#ms:tool> .
+<http://w3id.org/metasemap/ontology#ms:usesTool> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#used> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/metasemap/ontology#ms:usesTool> <http://www.w3.org/2000/01/rdf-schema#comment> "Tool used during a mapping activity." .
+<http://w3id.org/metasemap/ontology#ms:usesTool> <http://www.w3.org/2000/01/rdf-schema#label> "uses tool" .
+# 
+# http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/metasemap/ontology#ms:domainAssumption
+<http://w3id.org/metasemap/ontology#ms:domainAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:domainAssumption> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:AnalysisActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:justification
+<http://w3id.org/metasemap/ontology#ms:justification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:justification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:DesignActivity> .
+<http://w3id.org/metasemap/ontology#ms:justification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/metasemap/ontology#ms:mappingAlgorithm
+<http://w3id.org/metasemap/ontology#ms:mappingAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:mappingAlgorithm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> .
+<http://w3id.org/metasemap/ontology#ms:mappingAlgorithm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/metasemap/ontology#ms:mappingMethod
+<http://w3id.org/metasemap/ontology#ms:mappingMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:mappingMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> .
+<http://w3id.org/metasemap/ontology#ms:mappingMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/metasemap/ontology#ms:requirements
+<http://w3id.org/metasemap/ontology#ms:requirements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:requirements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:AnalysisActivity> .
+# 
+# http://w3id.org/metasemap/ontology#ms:riskOrIssue
+<http://w3id.org/metasemap/ontology#ms:riskOrIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:riskOrIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:AnalysisActivity> .
+<http://w3id.org/metasemap/ontology#ms:riskOrIssue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/metasemap/ontology#ms:technicalRequirement
+<http://w3id.org/metasemap/ontology#ms:technicalRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/metasemap/ontology#ms:technicalRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/metasemap/ontology#ms:AnalysisActivity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/metasemap/ontology#ms:AnalysisActivity
+<http://w3id.org/metasemap/ontology#ms:AnalysisActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:AnalysisActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/metasemap/ontology#ms:AnalysisActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase where mapping requirements and domains are analyzed" .
+<http://w3id.org/metasemap/ontology#ms:AnalysisActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis Activity" .
+# 
+# http://w3id.org/metasemap/ontology#ms:DesignActivity
+<http://w3id.org/metasemap/ontology#ms:DesignActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:DesignActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/metasemap/ontology#ms:DesignActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase defining mapping strategies, structures, and vocabularies." .
+<http://w3id.org/metasemap/ontology#ms:DesignActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Design Activity" .
+# 
+# http://w3id.org/metasemap/ontology#ms:DesignDecision
+<http://w3id.org/metasemap/ontology#ms:DesignDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:DesignDecision> <http://www.w3.org/2000/01/rdf-schema#comment> "A documented design choice during the mapping creation process" .
+<http://w3id.org/metasemap/ontology#ms:DesignDecision> <http://www.w3.org/2000/01/rdf-schema#label> "Design Decision" .
+# 
+# http://w3id.org/metasemap/ontology#ms:DevelopmentActivity
+<http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase where the mapping is implemented." .
+<http://w3id.org/metasemap/ontology#ms:DevelopmentActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Development Activity" .
+# 
+# http://w3id.org/metasemap/ontology#ms:InputDataset
+<http://w3id.org/metasemap/ontology#ms:InputDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:InputDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset used as an input for generating or validating a mapping." .
+<http://w3id.org/metasemap/ontology#ms:InputDataset> <http://www.w3.org/2000/01/rdf-schema#label> "Input Dataset" .
+# 
+# http://w3id.org/metasemap/ontology#ms:MaintenanceActivity
+<http://w3id.org/metasemap/ontology#ms:MaintenanceActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:MaintenanceActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/metasemap/ontology#ms:MaintenanceActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase involving updates, versioning, and evolution of mappings." .
+<http://w3id.org/metasemap/ontology#ms:MaintenanceActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Activity" .
+# 
+# http://w3id.org/metasemap/ontology#ms:MappingArtifact
+<http://w3id.org/metasemap/ontology#ms:MappingArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:MappingArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "A declarative mapping file" .
+<http://w3id.org/metasemap/ontology#ms:MappingArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Artifact" .
+# 
+# http://w3id.org/metasemap/ontology#ms:MappingProject
+<http://w3id.org/metasemap/ontology#ms:MappingProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:MappingProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A project that governs one or more mapping artifacts through their lifecycle" .
+<http://w3id.org/metasemap/ontology#ms:MappingProject> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Project" .
+# 
+# http://w3id.org/metasemap/ontology#ms:TestingActivity
+<http://w3id.org/metasemap/ontology#ms:TestingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:TestingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://w3id.org/metasemap/ontology#ms:TestingActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase validating the mapping correctness and output" .
+<http://w3id.org/metasemap/ontology#ms:TestingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Testing Activity" .
+# 
+# http://w3id.org/metasemap/ontology#ms:tool
+<http://w3id.org/metasemap/ontology#ms:tool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/metasemap/ontology#ms:tool> <http://www.w3.org/2000/01/rdf-schema#comment> "Software used in mapping activities (e.g., RMLMapper, SILK)." .
+<http://w3id.org/metasemap/ontology#ms:tool> <http://www.w3.org/2000/01/rdf-schema#label> "Tool" .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/metasemap/ontology
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/metasemap/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

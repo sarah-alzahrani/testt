@@ -1,0 +1,796 @@
+<h2 id="crossreference" class="list">Cross-reference for MetaSEMAP Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by MetaSEMAP Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ms:AnalysisActivity" title="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">Analysis Activity</a></li>
+  <li><a href="#ms:DesignActivity" title="http://w3id.org/metasemap/ontology#ms:DesignActivity">Design Activity</a></li>
+  <li><a href="#ms:DesignDecision" title="http://w3id.org/metasemap/ontology#ms:DesignDecision">Design Decision</a></li>
+  <li><a href="#ms:DevelopmentActivity" title="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity">Development Activity</a></li>
+  <li><a href="#ms:InputDataset" title="http://w3id.org/metasemap/ontology#ms:InputDataset">Input Dataset</a></li>
+  <li><a href="#ms:MaintenanceActivity" title="http://w3id.org/metasemap/ontology#ms:MaintenanceActivity">Maintenance Activity</a></li>
+  <li><a href="#ms:MappingArtifact" title="http://w3id.org/metasemap/ontology#ms:MappingArtifact">Mapping Artifact</a></li>
+  <li><a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Organization" title="http://xmlns.com/foaf/0.1/Organization"> <span>Organization</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person"> <span>Person</span> </a></li>
+  <li><a href="#ms:TestingActivity" title="http://w3id.org/metasemap/ontology#ms:TestingActivity">Testing Activity</a></li>
+  <li><a href="#ms:tool" title="http://w3id.org/metasemap/ontology#ms:tool">Tool</a></li>
+ </ul>
+ <div class="entity" id="ms:AnalysisActivity">
+  <h3>Analysis Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:AnalysisActivity</p>
+  <div class="comment">
+   <span class="markdown">The phase where mapping requirements and domains are analyzed</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ms:domainAssumption" title="http://w3id.org/metasemap/ontology#ms:domainAssumption">ms:domain Assumption</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#ms:requirements" title="http://w3id.org/metasemap/ontology#ms:requirements">ms:requirements</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#ms:riskOrIssue" title="http://w3id.org/metasemap/ontology#ms:riskOrIssue">ms:risk Or Issue</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#ms:technicalRequirement" title="http://w3id.org/metasemap/ontology#ms:technicalRequirement">ms:technical Requirement</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasAnalysis" title="http://w3id.org/metasemap/ontology#ms:hasAnalysis">ms:has Analysis</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:DesignActivity">
+  <h3>Design Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:DesignActivity</p>
+  <div class="comment">
+   <span class="markdown">The phase defining mapping strategies, structures, and vocabularies.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ms:hasDesignDecision" title="http://w3id.org/metasemap/ontology#ms:hasDesignDecision">ms:has Design Decision</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:justification" title="http://w3id.org/metasemap/ontology#ms:justification">ms:justification</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasDesign" title="http://w3id.org/metasemap/ontology#ms:hasDesign">ms:has Design</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:DesignDecision">
+  <h3>Design Decision<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:DesignDecision</p>
+  <div class="comment">
+   <span class="markdown">A documented design choice during the mapping creation process</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasDesignDecision" title="http://w3id.org/metasemap/ontology#ms:hasDesignDecision">ms:has Design Decision</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:DevelopmentActivity">
+  <h3>Development Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:DevelopmentActivity</p>
+  <div class="comment">
+   <span class="markdown">The phase where the mapping is implemented.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ms:mappingAlgorithm" title="http://w3id.org/metasemap/ontology#ms:mappingAlgorithm">ms:mapping Algorithm</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#ms:mappingMethod" title="http://w3id.org/metasemap/ontology#ms:mappingMethod">ms:mapping Method</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasDevelopment" title="http://w3id.org/metasemap/ontology#ms:hasDevelopment">ms:has Development</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:InputDataset">
+  <h3>Input Dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:InputDataset</p>
+  <div class="comment">
+   <span class="markdown">A dataset used as an input for generating or validating a mapping.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasInput" title="http://w3id.org/metasemap/ontology#ms:hasInput">ms:has Input</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:MaintenanceActivity">
+  <h3>Maintenance Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:MaintenanceActivity</p>
+  <div class="comment">
+   <span class="markdown">The phase involving updates, versioning, and evolution of mappings.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasMaintenance" title="http://w3id.org/metasemap/ontology#ms:hasMaintenance">ms:has Maintenance</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:MappingArtifact">
+  <h3>Mapping Artifact<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:MappingArtifact</p>
+  <div class="comment">
+   <span class="markdown">A declarative mapping file</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ms:hasAssessment" title="http://w3id.org/metasemap/ontology#ms:hasAssessment">has assessment</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasQualityIssue" title="http://w3id.org/metasemap/ontology#ms:hasQualityIssue">has quality issue</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasValidation" title="http://w3id.org/metasemap/ontology#ms:hasValidation">has validation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:producedMapping" title="http://w3id.org/metasemap/ontology#ms:producedMapping">ms:produced Mapping</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:MappingProject">
+  <h3>Mapping Project<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:MappingProject</p>
+  <div class="comment">
+   <span class="markdown">A project that governs one or more mapping artifacts through their lifecycle</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ms:hasAnalysis" title="http://w3id.org/metasemap/ontology#ms:hasAnalysis">ms:has Analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasDesign" title="http://w3id.org/metasemap/ontology#ms:hasDesign">ms:has Design</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasDevelopment" title="http://w3id.org/metasemap/ontology#ms:hasDevelopment">ms:has Development</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasInput" title="http://w3id.org/metasemap/ontology#ms:hasInput">ms:has Input</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasMaintenance" title="http://w3id.org/metasemap/ontology#ms:hasMaintenance">ms:has Maintenance</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasStakeholder" title="http://w3id.org/metasemap/ontology#ms:hasStakeholder">ms:has Stakeholder</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:hasTesting" title="http://w3id.org/metasemap/ontology#ms:hasTesting">ms:has Testing</a> <sup class="type-op" title="object property">op</sup>, <a href="#ms:producedMapping" title="http://w3id.org/metasemap/ontology#ms:producedMapping">ms:produced Mapping</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Organization">
+  <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Organization</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:TestingActivity">
+  <h3>Testing Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:TestingActivity</p>
+  <div class="comment">
+   <span class="markdown">The phase validating the mapping correctness and output</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#dqv:hasQualityMeasurement" title="http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement">dqv:has Quality Measurement</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:hasTesting" title="http://w3id.org/metasemap/ontology#ms:hasTesting">ms:has Testing</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ms:tool">
+  <h3>Tool<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:tool</p>
+  <div class="comment">
+   <span class="markdown">Software used in mapping activities (e.g., RMLMapper, SILK).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ms:usesTool" title="http://w3id.org/metasemap/ontology#ms:usesTool">uses tool</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#dqv:hasQualityMeasurement" title="http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement"> <span>dqv:has Quality Measurement</span> </a></li>
+  <li><a href="#ms:hasAssessment" title="http://w3id.org/metasemap/ontology#ms:hasAssessment">has assessment</a></li>
+  <li><a href="#ms:hasQualityIssue" title="http://w3id.org/metasemap/ontology#ms:hasQualityIssue">has quality issue</a></li>
+  <li><a href="#ms:hasValidation" title="http://w3id.org/metasemap/ontology#ms:hasValidation">has validation</a></li>
+  <li><a href="#ms:hasAnalysis" title="http://w3id.org/metasemap/ontology#ms:hasAnalysis"> <span>ms:has Analysis</span> </a></li>
+  <li><a href="#ms:hasDesign" title="http://w3id.org/metasemap/ontology#ms:hasDesign"> <span>ms:has Design</span> </a></li>
+  <li><a href="#ms:hasDesignDecision" title="http://w3id.org/metasemap/ontology#ms:hasDesignDecision"> <span>ms:has Design Decision</span> </a></li>
+  <li><a href="#ms:hasDevelopment" title="http://w3id.org/metasemap/ontology#ms:hasDevelopment"> <span>ms:has Development</span> </a></li>
+  <li><a href="#ms:hasInput" title="http://w3id.org/metasemap/ontology#ms:hasInput"> <span>ms:has Input</span> </a></li>
+  <li><a href="#ms:hasMaintenance" title="http://w3id.org/metasemap/ontology#ms:hasMaintenance"> <span>ms:has Maintenance</span> </a></li>
+  <li><a href="#ms:hasStakeholder" title="http://w3id.org/metasemap/ontology#ms:hasStakeholder"> <span>ms:has Stakeholder</span> </a></li>
+  <li><a href="#ms:hasTesting" title="http://w3id.org/metasemap/ontology#ms:hasTesting"> <span>ms:has Testing</span> </a></li>
+  <li><a href="#ms:producedMapping" title="http://w3id.org/metasemap/ontology#ms:producedMapping"> <span>ms:produced Mapping</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used"> <span>used</span> </a></li>
+  <li><a href="#ms:usesTool" title="http://w3id.org/metasemap/ontology#ms:usesTool">uses tool</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith"> <span>was Associated With</span> </a></li>
+ </ul>
+ <div class="entity" id="dqv:hasQualityMeasurement">
+  <h3>dqv:has Quality Measurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#dqv:hasQualityMeasurement</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:TestingActivity" title="http://w3id.org/metasemap/ontology#ms:TestingActivity">Testing Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasAssessment">
+  <h3>has assessment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasAssessment</p>
+  <div class="comment">
+   <span class="markdown">Links a mapping artifact to an MQV assessment instance</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingArtifact" title="http://w3id.org/metasemap/ontology#ms:MappingArtifact">Mapping Artifact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasQualityIssue">
+  <h3>has quality issue<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasQualityIssue</p>
+  <div class="comment">
+   <span class="markdown">Links a mapping artifact to a detected MQV quality issue.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingArtifact" title="http://w3id.org/metasemap/ontology#ms:MappingArtifact">Mapping Artifact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasValidation">
+  <h3>has validation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasValidation</p>
+  <div class="comment">
+   <span class="markdown">Links a mapping artifact to an MQV validation instance.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingArtifact" title="http://w3id.org/metasemap/ontology#ms:MappingArtifact">Mapping Artifact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasAnalysis">
+  <h3>ms:has Analysis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasAnalysis</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:AnalysisActivity" title="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">Analysis Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasDesign">
+  <h3>ms:has Design<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasDesign</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:DesignActivity" title="http://w3id.org/metasemap/ontology#ms:DesignActivity">Design Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasDesignDecision">
+  <h3>ms:has Design Decision<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasDesignDecision</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:DesignActivity" title="http://w3id.org/metasemap/ontology#ms:DesignActivity">Design Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:DesignDecision" title="http://w3id.org/metasemap/ontology#ms:DesignDecision">Design Decision</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasDevelopment">
+  <h3>ms:has Development<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasDevelopment</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:DevelopmentActivity" title="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity">Development Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasInput">
+  <h3>ms:has Input<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasInput</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:InputDataset" title="http://w3id.org/metasemap/ontology#ms:InputDataset">Input Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasMaintenance">
+  <h3>ms:has Maintenance<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasMaintenance</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:MaintenanceActivity" title="http://w3id.org/metasemap/ontology#ms:MaintenanceActivity">Maintenance Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasStakeholder">
+  <h3>ms:has Stakeholder<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasStakeholder</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:hasTesting">
+  <h3>ms:has Testing<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:hasTesting</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:TestingActivity" title="http://w3id.org/metasemap/ontology#ms:TestingActivity">Testing Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:producedMapping">
+  <h3>ms:produced Mapping<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:producedMapping</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:MappingProject" title="http://w3id.org/metasemap/ontology#ms:MappingProject">Mapping Project</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:MappingArtifact" title="http://w3id.org/metasemap/ontology#ms:MappingArtifact">Mapping Artifact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#used">
+  <h3>used<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#used</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:DevelopmentActivity" title="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity">Development Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:usesTool">
+  <h3>uses tool<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:usesTool</p>
+  <div class="comment">
+   <span class="markdown">Tool used during a mapping activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ms:tool" title="http://w3id.org/metasemap/ontology#ms:tool">Tool</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has sub-property chains
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
+  <h3>was Associated With<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedWith</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#ms:domainAssumption" title="http://w3id.org/metasemap/ontology#ms:domainAssumption"> <span>ms:domain Assumption</span> </a></li>
+  <li><a href="#ms:justification" title="http://w3id.org/metasemap/ontology#ms:justification"> <span>ms:justification</span> </a></li>
+  <li><a href="#ms:mappingAlgorithm" title="http://w3id.org/metasemap/ontology#ms:mappingAlgorithm"> <span>ms:mapping Algorithm</span> </a></li>
+  <li><a href="#ms:mappingMethod" title="http://w3id.org/metasemap/ontology#ms:mappingMethod"> <span>ms:mapping Method</span> </a></li>
+  <li><a href="#ms:requirements" title="http://w3id.org/metasemap/ontology#ms:requirements"> <span>ms:requirements</span> </a></li>
+  <li><a href="#ms:riskOrIssue" title="http://w3id.org/metasemap/ontology#ms:riskOrIssue"> <span>ms:risk Or Issue</span> </a></li>
+  <li><a href="#ms:technicalRequirement" title="http://w3id.org/metasemap/ontology#ms:technicalRequirement"> <span>ms:technical Requirement</span> </a></li>
+ </ul>
+ <div class="entity" id="ms:domainAssumption">
+  <h3>ms:domain Assumption<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:domainAssumption</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:AnalysisActivity" title="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">Analysis Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:justification">
+  <h3>ms:justification<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:justification</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:DesignActivity" title="http://w3id.org/metasemap/ontology#ms:DesignActivity">Design Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:mappingAlgorithm">
+  <h3>ms:mapping Algorithm<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:mappingAlgorithm</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:DevelopmentActivity" title="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity">Development Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:mappingMethod">
+  <h3>ms:mapping Method<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:mappingMethod</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:DevelopmentActivity" title="http://w3id.org/metasemap/ontology#ms:DevelopmentActivity">Development Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:requirements">
+  <h3>ms:requirements<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:requirements</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:AnalysisActivity" title="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">Analysis Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:riskOrIssue">
+  <h3>ms:risk Or Issue<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:riskOrIssue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:AnalysisActivity" title="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">Analysis Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ms:technicalRequirement">
+  <h3>ms:technical Requirement<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology#ms:technicalRequirement</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ms:AnalysisActivity" title="http://w3id.org/metasemap/ontology#ms:AnalysisActivity">Analysis Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued"> <span>issued</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher"> <span>publisher</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+  <li><a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"> <span>type</span> </a></li>
+  <li><a href="#http://www.w3.org/2002/07/owl#versionInfo" title="http://www.w3.org/2002/07/owl#versionInfo"> <span>version Info</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/issued">
+  <h3>issued<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/publisher">
+  <h3>publisher<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+  <h3>type<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/1999/02/22-rdf-syntax-ns#type</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2002/07/owl#versionInfo">
+  <h3>version Info<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2002/07/owl#versionInfo</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#http://w3id.org/metasemap/ontology" title="http://w3id.org/metasemap/ontology"> <span>ontology</span> </a></li>
+ </ul>
+ <div class="entity" id="http://w3id.org/metasemap/ontology">
+  <h3>ontology<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/metasemap/ontology</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/vocommons/voaf#Vocabulary" target="_blank" title="http://purl.org/vocommons/voaf#Vocabulary">Vocabulary</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
