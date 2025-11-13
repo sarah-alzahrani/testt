@@ -1,0 +1,865 @@
+@prefix : <http://www.w3.org/ns/dqv#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/ns/dqv#> .
+
+<http://www.w3.org/ns/dqv#> rdf:type owl:Ontology ;
+                             owl:versionIRI <http://w3id.org/mmv/0.1> ;
+                             owl:imports <http://www.w3.org/ns/prov-o-20130430> ,
+                                         <http://xmlns.com/foaf/0.1/> ,
+                                         <https://alex-randles.github.io/MQV/#> ;
+                             <http://purl.1122org/ontology/bibo/status> "draft" ;
+                             <http://purl.org/dc/terms/created> "2025-11-01"^^xsd:date ;
+                             <http://purl.org/dc/terms/creator> <http://w3id.org/mmv/#Sara_Agent> ;
+                             <http://purl.org/dc/terms/description> "A lifecycle-based vocabulary for describing metadata, provenance, and quality of mapping projects and artifacts." ;
+                             <http://purl.org/dc/terms/issued> "2025-11-12"^^xsd:date ;
+                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/terms/publisher> "\"Trinity College Dublin\"" ;
+                             <http://purl.org/dc/terms/title> "The Mapping Metadata Vocabulary" ;
+                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "mmv" ;
+                             <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/mmv/> ;
+                             owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.1122org/ontology/bibo/status
+<http://purl.1122org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/type
+<http://purl.org/dc/terms/type> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://alex-randles.github.io/MQV/#hasQualityMeasurement
+<https://alex-randles.github.io/MQV/#hasQualityMeasurement> rdf:type owl:AnnotationProperty .
+
+
+###  https://alex-randles.github.io/MQV/#mappingPurpose
+<https://alex-randles.github.io/MQV/#mappingPurpose> rdf:type owl:AnnotationProperty ;
+                                                     rdfs:domain <http://w3id.org/mmv/#MappingArtifact> .
+
+
+###  https://alex-randles.github.io/MQV/#resultMessage
+<https://alex-randles.github.io/MQV/#resultMessage> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#anySimpleType
+xsd:anySimpleType rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/eis/vocab/daq#hasDimension
+<http://purl.org/eis/vocab/daq#hasDimension> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf :inCategory .
+
+
+###  http://purl.org/eis/vocab/daq#hasMetric
+<http://purl.org/eis/vocab/daq#hasMetric> rdf:type owl:ObjectProperty .
+
+[ owl:inverseOf <http://purl.org/eis/vocab/daq#hasMetric> ;
+   rdfs:subPropertyOf :inDimension
+ ] .
+
+
+###  http://w3id.org/mmv/#evaluatesArtifact
+<http://w3id.org/mmv/#evaluatesArtifact> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+                                         rdfs:domain <http://w3id.org/mmv/#EvaluationActivity> ;
+                                         rdfs:range <http://w3id.org/mmv/#MappingArtifact> ;
+                                         rdfs:comment "evaluation activity that assesses the quality of a mapping artifact." ;
+                                         rdfs:label "evaluatesArtifact" .
+
+
+###  http://w3id.org/mmv/#hasAnalysis
+<http://w3id.org/mmv/#hasAnalysis> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                   rdfs:range <http://w3id.org/mmv/#AnalysisActivity> ;
+                                   rdfs:comment "Analysis phase of the project" ;
+                                   rdfs:label "hasAnalysis" .
+
+
+###  http://w3id.org/mmv/#hasDesign
+<http://w3id.org/mmv/#hasDesign> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                 rdfs:range <http://w3id.org/mmv/#DesignActivity> ;
+                                 rdfs:comment "Design phase of the project" ;
+                                 rdfs:label "hasDesign" .
+
+
+###  http://w3id.org/mmv/#hasDevelopment
+<http://w3id.org/mmv/#hasDevelopment> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                      rdfs:range <http://w3id.org/mmv/#DevelopmentActivity> ;
+                                      rdfs:comment "Development phase of the project" ;
+                                      rdfs:label "hasDevelopment" .
+
+
+###  http://w3id.org/mmv/#hasMaintenance
+<http://w3id.org/mmv/#hasMaintenance> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                      rdfs:range <http://w3id.org/mmv/#MaintenanceActivity> ;
+                                      rdfs:comment "Maintenance phase of the project" ;
+                                      rdfs:label "hasMaintenance" .
+
+
+###  http://w3id.org/mmv/#hasTesting
+<http://w3id.org/mmv/#hasTesting> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                  rdfs:range <http://w3id.org/mmv/#TestingActivity> ;
+                                  rdfs:comment "Testing phase of the project" ;
+                                  rdfs:label "hasTesting" .
+
+
+###  http://w3id.org/mmv/#testsArtifact
+<http://w3id.org/mmv/#testsArtifact> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+                                     rdfs:domain <http://w3id.org/mmv/#TestingActivity> ;
+                                     rdfs:range <http://w3id.org/mmv/#MappingArtifact> ;
+                                     rdfs:comment "Testing activity that validates a mapping artifact." ;
+                                     rdfs:label "testsArtifact" .
+
+
+###  http://www.w3.org/ns/dqv#computedOn
+:computedOn rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasQualityMeasurement ;
+            rdfs:domain :QualityMeasurement ;
+            rdfs:range rdfs:Resource .
+
+
+###  http://www.w3.org/ns/dqv#hasQualityAnnotation
+:hasQualityAnnotation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf [ owl:inverseOf <http://www.w3.org/ns/oa#hasTarget>
+                                         ] ;
+                      rdfs:range :QualityAnnotation ;
+                      rdfs:comment "Refers to a quality annotation. Quality annotation can be applied to any kind of resource, e.g., a dataset, a linkset, a graph, a set of triples. However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."@en ;
+                      rdfs:label "has quality annotation"@en .
+
+
+###  http://www.w3.org/ns/dqv#hasQualityMeasurement
+:hasQualityMeasurement rdf:type owl:ObjectProperty ;
+                       rdfs:domain <http://w3id.org/mmv/#MappingArtifact> ;
+                       rdfs:range :QualityMeasurement ;
+                       rdfs:comment "Refers to the performed quality measurements. Quality measurements can be performed to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."@en ;
+                       rdfs:label "has quality measurement"@en .
+
+
+###  http://www.w3.org/ns/dqv#hasQualityMetadata
+:hasQualityMetadata rdf:type owl:ObjectProperty ;
+                    rdfs:range :QualityMetadata ;
+                    rdfs:comment "Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."@en ;
+                    rdfs:label "has quality metadata"@en .
+
+
+###  http://www.w3.org/ns/dqv#inCategory
+:inCategory rdf:type owl:ObjectProperty ;
+            rdfs:domain :Dimension ;
+            rdfs:range :Category ;
+            <http://purl.org/vocab/vann/usageNote> "Categories are meant to systematically organize dimensions. The Data Quality Vocabulary defines no specific cardinality constraints for dqv:inCategory, since distinct quality frameworks might have different perspectives over a dimension. A dimension may therefore be associated to more than one category. However, those who define new quality metrics should try to avoid this as much as possible and assign only one category to the dimensions they define."@en ;
+            rdfs:comment "Represents the category a dimension is grouped in."@en ;
+            rdfs:label "in category"@en .
+
+
+###  http://www.w3.org/ns/dqv#inDimension
+:inDimension rdf:type owl:ObjectProperty ;
+             rdfs:range :Dimension ;
+             <http://purl.org/vocab/vann/usageNote> "Dimensions are meant to systematically organize metrics, quality certificates and quality annotations. The Data Quality Vocabulary defines no specific cardinality constraints for dqv:inDimension, since distinct quality frameworks might have different perspectives over a metric. A metric may therefore be associated to more than one dimension. However, those who define new quality metrics should try to avoid this as much as possible and assign only one dimension to the metrics they define. More than one dimension can be indicated for each quality annotation or certificate."@en ;
+             rdfs:comment "Represents the dimensions a quality metric, certificate and annotation allow a measurement of."@en ;
+             rdfs:label "in dimension"@en .
+
+
+###  http://www.w3.org/ns/dqv#isMeasurementOf
+:isMeasurementOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://purl.org/linked-data/cube#Observation> ;
+                 rdfs:range :Metric .
+
+
+###  http://www.w3.org/ns/oa#hasTarget
+<http://www.w3.org/ns/oa#hasTarget> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#motivation
+<http://www.w3.org/ns/oa#motivation> rdf:type owl:ObjectProperty .
+
+
+###  https://alex-randles.github.io/MQV/#wasDerivedFrom
+<https://alex-randles.github.io/MQV/#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                                     rdfs:range <http://www.w3.org/ns/prov#Entity> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/mmv/mappingLanguage
+<http://w3id.org/mmv/mappingLanguage> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#MappingArtifact> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "Mapping language / format (RML, SPARQL, SSSOM, AML…)" ;
+                                      rdfs:label "mappingLanguage" .
+
+
+###  http://w3id.org/mmv/mappingType
+<http://w3id.org/mmv/mappingType> rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <http://w3id.org/mmv/#MappingArtifact> ;
+                                  rdfs:range rdfs:Literal ;
+                                  rdfs:comment "Mapping type (e.g., uplift mapping, ontology alignment, interlinking)" ;
+                                  rdfs:label "mappingType" .
+
+
+###  http://w3id.org/mmv/#hasAssumption
+<http://w3id.org/mmv/#hasAssumption> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://w3id.org/mmv/#AnalysisActivity> ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "Assumption related to the project" ;
+                                     rdfs:label "hasAssumption" .
+
+
+###  http://w3id.org/mmv/#hasDescription
+<http://w3id.org/mmv/#hasDescription> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#MappingArtifact> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "Description of the project" ;
+                                      rdfs:label "hasDescription" .
+
+
+###  http://w3id.org/mmv/#hasRequirement
+<http://w3id.org/mmv/#hasRequirement> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#AnalysisActivity> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "requirements of the project" ;
+                                      rdfs:label "hasRequirement" .
+
+
+###  http://w3id.org/mmv/#hasRiskOrIssue
+<http://w3id.org/mmv/#hasRiskOrIssue> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#AnalysisActivity> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "Risk or issues realted to the project" ;
+                                      rdfs:label "hasRiskOrIssue" .
+
+
+###  http://w3id.org/mmv/#projectEndTime
+<http://w3id.org/mmv/#projectEndTime> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                      rdfs:range xsd:dateTime ;
+                                      rdfs:comment "The time at which a project ended." ;
+                                      rdfs:label "projectEndTime" .
+
+
+###  http://w3id.org/mmv/#projectStartTime
+<http://w3id.org/mmv/#projectStartTime> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://w3id.org/mmv/#MappingProject> ;
+                                        rdfs:range xsd:dateTime ;
+                                        rdfs:comment "The time at which a project started." ;
+                                        rdfs:label "projectStartTime" .
+
+
+###  http://w3id.org/mmv/#version
+<http://w3id.org/mmv/#version> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <http://w3id.org/mmv/#MappingArtifact> ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "version of the mapping" ;
+                               rdfs:label "version" .
+
+
+###  http://www.w3.org/ns/dqv#expectedDataType
+:expectedDataType rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Metric ;
+                  rdfs:range xsd:anySimpleType ;
+                  rdfs:comment "Represents the expected data type for metric's observed value (e.g. xsd:boolean, xsd:double etc...)"@en ;
+                  rdfs:label "expected data type"@en .
+
+
+###  http://www.w3.org/ns/dqv#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :QualityMeasurement .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/eis/vocab/daq#Category
+<http://purl.org/eis/vocab/daq#Category> rdf:type owl:Class ;
+                                         owl:equivalentClass :Category .
+
+
+###  http://purl.org/eis/vocab/daq#Dimension
+<http://purl.org/eis/vocab/daq#Dimension> rdf:type owl:Class ;
+                                          owl:equivalentClass :Dimension .
+
+
+###  http://purl.org/eis/vocab/daq#Metric
+<http://purl.org/eis/vocab/daq#Metric> rdf:type owl:Class ;
+                                       owl:equivalentClass :Metric .
+
+
+###  http://purl.org/eis/vocab/daq#Observation
+<http://purl.org/eis/vocab/daq#Observation> rdf:type owl:Class ;
+                                            owl:equivalentClass :QualityMeasurement .
+
+
+###  http://purl.org/eis/vocab/daq#QualityGraph
+<http://purl.org/eis/vocab/daq#QualityGraph> rdf:type owl:Class ;
+                                             owl:equivalentClass :QualityMeasurementDataset .
+
+
+###  http://purl.org/linked-data/cube#DataSet
+<http://purl.org/linked-data/cube#DataSet> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#DimensionProperty
+<http://purl.org/linked-data/cube#DimensionProperty> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#MeasureProperty
+<http://purl.org/linked-data/cube#MeasureProperty> rdf:type owl:Class .
+
+
+###  http://purl.org/linked-data/cube#Observation
+<http://purl.org/linked-data/cube#Observation> rdf:type owl:Class .
+
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  http://w3id.org/mmv/#AnalysisActivity
+<http://w3id.org/mmv/#AnalysisActivity> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                        rdfs:comment "The phase in which mapping strategies and rules are designed." ;
+                                        rdfs:label "AnalysisActivity" .
+
+
+###  http://w3id.org/mmv/#DataSet
+<http://w3id.org/mmv/#DataSet> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                               rdfs:comment "Represents a structured collection of data that serves as an input or output in a mapping project or activity." ;
+                               rdfs:label "DataSet" .
+
+
+###  http://w3id.org/mmv/#DesignActivity
+<http://w3id.org/mmv/#DesignActivity> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                      rdfs:comment "The activity of designing mapping and making reuse decision." ;
+                                      rdfs:label "DesignActivity" .
+
+
+###  http://w3id.org/mmv/#DevelopmentActivity
+<http://w3id.org/mmv/#DevelopmentActivity> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                           rdfs:comment "The phase in which mappings are implemented and generated." ;
+                                           rdfs:label "DevelopmentActivity" .
+
+
+###  http://w3id.org/mmv/#EvaluationActivity
+<http://w3id.org/mmv/#EvaluationActivity> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                                                          <https://alex-randles.github.io/MQV/#MappingAssessment> ;
+                                          rdfs:comment "The activity of assessing the quality or performance of mapping results using defined metrics. (How well does it perform or comply with quality standards?)" ;
+                                          rdfs:label "EvaluationActivity" .
+
+
+###  http://w3id.org/mmv/#MaintenanceActivity
+<http://w3id.org/mmv/#MaintenanceActivity> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                           rdfs:comment "The phase in which mappings are updated, repaired, or extended for reuse." ;
+                                           rdfs:label "MaintenanceActivity" .
+
+
+###  http://w3id.org/mmv/#MappingArtifact
+<http://w3id.org/mmv/#MappingArtifact> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                       rdfs:comment "A tangible output of a mapping project, such as an RML file, ontology alignment, or linkset." ;
+                                       rdfs:label "MappingArtifact" .
+
+
+###  http://w3id.org/mmv/#MappingProject
+<http://w3id.org/mmv/#MappingProject> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                      rdfs:comment "A project encompassing the creation, maintenance, and evaluation of one or more mapping artifacts." ;
+                                      rdfs:label "MappingProject" .
+
+
+###  http://w3id.org/mmv/#TestingActivity
+<http://w3id.org/mmv/#TestingActivity> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+                                       rdfs:comment "The activity of validating mapping outputs against expected results or constraints. (Does it work as intended?)" ;
+                                       rdfs:label "TestingActivity" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/03/trix/rdfg-1/Graph
+<http://www.w3.org/2004/03/trix/rdfg-1/Graph> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dqv#Category
+:Category rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+          rdfs:comment "Represents a group of quality dimensions in which a common type of information is used as quality indicator."@en ;
+          rdfs:label "Category"@en .
+
+
+###  http://www.w3.org/ns/dqv#Dimension
+:Dimension rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+           rdfs:comment "Represents criteria relevant for assessing quality. Each quality dimension must have one or more metric to measure it. A dimension is linked with a category using the dqv:inCategory property."@en ;
+           rdfs:label "Dimension"@en .
+
+
+###  http://www.w3.org/ns/dqv#Metric
+:Metric rdf:type owl:Class ;
+        rdfs:comment "Represents a standard to measure a quality dimension. An observation (instance of dqv:QualityMeasurement) assigns a value in a given unit to a Metric."@en ;
+        rdfs:label "Metric"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityAnnotation
+:QualityAnnotation rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://www.w3.org/ns/oa#motivation> ;
+                                         owl:hasValue :qualityAssessment
+                                       ] ;
+                   rdfs:subClassOf <http://www.w3.org/ns/oa#Annotation> ;
+                   rdfs:comment "Represents quality annotations, including ratings, quality certificates or feedback that can be associated to datasets or distributions. Quality annotations must have one oa:motivatedBy statement with an instance of oa:Motivation (and skos:Concept) that reflects a quality assessment purpose. We define this instance as dqv:qualityAssessment."@en ;
+                   rdfs:label "Quality Annotation"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityCertificate
+:QualityCertificate rdf:type owl:Class ;
+                    rdfs:subClassOf :QualityAnnotation ;
+                    rdfs:comment "An annotation that associates a resource (especially, a dataset or a distribution) to another resource (for example, a document) that certifies the resource's quality according to a set of quality assessment rules."@en ;
+                    rdfs:label "Quality Certificate"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityMeasurement
+:QualityMeasurement rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/linked-data/cube#Observation> ;
+                    <http://purl.org/vocab/vann/usageNote> "The unit of measure in quality measurement should be specified through the property sdmx-attribute:unitMeasure as recommended by RDF Data Cube. The Ontology of units of Measure (OM) by Rijgersberg Et Al provides a list of HTTP dereferenceable unit of measures, which can be exploited as values for sdmx-attribute:unitMeasure."@en ;
+                    rdfs:comment "Represents the evaluation of a given dataset (or dataset distribution) against a specific quality metric."@en ;
+                    rdfs:label "Quality Measurement"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityMeasurementDataset
+:QualityMeasurementDataset rdf:type owl:Class ;
+                           rdfs:subClassOf <http://purl.org/linked-data/cube#DataSet> ;
+                           rdfs:comment "Represents a dataset of quality measurements, evaluations of one or more datasets (or dataset distributions) against specific quality metrics."@en ;
+                           rdfs:label "Quality Measurement Dataset"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityMetadata
+:QualityMetadata rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/2004/03/trix/rdfg-1/Graph> ;
+                 <http://purl.org/vocab/vann/usageNote> "QualityMetadata containers do not necessary include all types of quality statements DQV can support. Implementers decide the granularity of containment. In the current version of DQV, we also leave open the choice of the containment technique. Implementers can use (RDF) graph containment. They may also use an appropriate property of their choice — for example (a subproperty of) dcterms:hasPart — to link instances of dqv:QualityMetadata with instances of other DQV classes."@en ;
+                 rdfs:comment "Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph."@en ;
+                 rdfs:label "Quality Metadata"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityPolicy
+:QualityPolicy rdf:type owl:Class ;
+               rdfs:comment "Represents a policy or agreement that is chiefly governed by data quality concerns."@en ;
+               rdfs:label "Quality Policy"@en .
+
+
+###  http://www.w3.org/ns/dqv#UserQualityFeedback
+:UserQualityFeedback rdf:type owl:Class ;
+                     rdfs:subClassOf :QualityAnnotation ,
+                                     <http://www.w3.org/ns/duv#UserFeedback> ;
+                     rdfs:comment "Represents feedback that users have on the quality of datasets or distributions. Besides dqv:qualityAssessment, which is the motivation required by all quality annotations, one of the predefined instances of oa:Motivation should be indicated as motivation to distinguish among the different kinds of feedback, e.g., classifications, questions."@en ;
+                     rdfs:label "User Quality feedback"@en .
+
+
+###  http://www.w3.org/ns/duv#UserFeedback
+<http://www.w3.org/ns/duv#UserFeedback> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/oa#Annotation
+<http://www.w3.org/ns/oa#Annotation> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/oa#Motivation
+<http://www.w3.org/ns/oa#Motivation> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://alex-randles.github.io/MQV/#MappingAssessment
+<https://alex-randles.github.io/MQV/#MappingAssessment> rdf:type owl:Class .
+
+
+###  https://alex-randles.github.io/MQV/#MappingTool
+<https://alex-randles.github.io/MQV/#MappingTool> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+
+
+###  https://alex-randles.github.io/MQV/#MappingValidationReport
+<https://alex-randles.github.io/MQV/#MappingValidationReport> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/mmv/#Adapt
+<http://w3id.org/mmv/#Adapt> rdf:type owl:NamedIndividual ,
+                                      <http://www.w3.org/ns/prov#Agent> ,
+                                      <http://www.w3.org/ns/prov#Organization> .
+
+
+###  http://w3id.org/mmv/#M1
+<http://w3id.org/mmv/#M1> rdf:type owl:NamedIndividual ,
+                                   :QualityMeasurement ;
+                          :computedOn <http://w3id.org/mmv/#MapV2> ;
+                          :isMeasurementOf <http://w3id.org/mmv/#PrecisionMetric> ;
+                          :value "\"0.92\"^^xsd:decimal" .
+
+
+###  http://w3id.org/mmv/#MapV2
+<http://w3id.org/mmv/#MapV2> rdf:type owl:NamedIndividual ,
+                                      <http://w3id.org/mmv/#MappingArtifact> ;
+                             <http://w3id.org/mmv/mappingLanguage> "RML" ;
+                             <http://w3id.org/mmv/mappingType> "Uplift Mapping" ;
+                             <http://w3id.org/mmv/#version> "\"2\"^^xsd:string" ;
+                             <http://purl.org/dc/terms/title> "ED 2022 Mapping File" ;
+                             <https://alex-randles.github.io/MQV/#hasQualityMeasurement> <http://w3id.org/mmv/#M1> ;
+                             <https://alex-randles.github.io/MQV/#mappingPurpose> "Publish admin divisions for analytics" ;
+                             <https://alex-randles.github.io/MQV/#resultMessage> "Validation successful, no errors found" .
+
+
+###  http://w3id.org/mmv/#MapV3
+<http://w3id.org/mmv/#MapV3> rdf:type owl:NamedIndividual ,
+                                      <http://w3id.org/mmv/#MappingArtifact> ;
+                             <https://alex-randles.github.io/MQV/#wasDerivedFrom> <http://w3id.org/mmv/#MapV2> ;
+                             <http://w3id.org/mmv/#hasDescription> "Post-assessment fixes and refinements after evaluation" ;
+                             <http://w3id.org/mmv/#version> "\"3\"^^xsd:string" .
+
+
+###  http://w3id.org/mmv/#PrecisionMetric
+<http://w3id.org/mmv/#PrecisionMetric> rdf:type owl:NamedIndividual ,
+                                                :Metric .
+
+
+###  http://w3id.org/mmv/#Proj1
+<http://w3id.org/mmv/#Proj1> rdf:type owl:NamedIndividual ,
+                                      <http://w3id.org/mmv/#MappingProject> ;
+                             <http://w3id.org/mmv/#hasAnalysis> <http://w3id.org/mmv/#Proj1_Analysis> ;
+                             <http://w3id.org/mmv/#hasDesign> <http://w3id.org/mmv/#Proj1_Design> ;
+                             <http://w3id.org/mmv/#hasDevelopment> <http://w3id.org/mmv/#Proj1_Dev> ;
+                             <http://w3id.org/mmv/#hasMaintenance> <http://w3id.org/mmv/#Proj1_Mint> ;
+                             <http://w3id.org/mmv/#hasTesting> <http://w3id.org/mmv/#Proj1_Test> ;
+                             <http://w3id.org/mmv/#projectEndTime> "2025-11-12T17:00:00Z"^^xsd:dateTime ;
+                             <http://w3id.org/mmv/#projectStartTime> "2025-11-12T17:00:00Z"^^xsd:dateTime ;
+                             <http://purl.org/dc/terms/description> "Converts CSV wards to DCAT+Geo vocab." ;
+                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/terms/title> "Open Data to Geo RDF Mapping" .
+
+
+###  http://w3id.org/mmv/#Proj1_Analysis
+<http://w3id.org/mmv/#Proj1_Analysis> rdf:type owl:NamedIndividual ,
+                                               <http://w3id.org/mmv/#AnalysisActivity> ;
+                                      <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> ;
+                                      <http://w3id.org/mmv/#hasAssumption> "Codes are unique per division" ;
+                                      <http://w3id.org/mmv/#hasRequirement> "Use GeoNames IDs for region linking" ;
+                                      <http://w3id.org/mmv/#hasRiskOrIssue> "Missing parents for 2% of rows"^^rdfs:Literal ;
+                                      <http://www.w3.org/ns/prov#endedAtTime> "2025-11-12T17:00:00Z"^^xsd:dateTime ;
+                                      <http://www.w3.org/ns/prov#startedAtTime> "2025-11-12T17:00:00Z"^^xsd:dateTime .
+
+
+###  http://w3id.org/mmv/#Proj1_Assess
+<http://w3id.org/mmv/#Proj1_Assess> rdf:type owl:NamedIndividual ,
+                                             <http://w3id.org/mmv/#EvaluationActivity> ;
+                                    <http://w3id.org/mmv/#evaluatesArtifact> <http://w3id.org/mmv/#MapV2> ;
+                                    :computedOn <http://w3id.org/mmv/#MapV2> ;
+                                    <http://www.w3.org/ns/prov#generated> <http://w3id.org/mmv/#M1> ;
+                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> ;
+                                    <http://www.w3.org/ns/prov#wasInformedBy> <http://w3id.org/mmv/#Proj1_Test> ;
+                                    :value 0.92 .
+
+
+###  http://w3id.org/mmv/#Proj1_Design
+<http://w3id.org/mmv/#Proj1_Design> rdf:type owl:NamedIndividual ,
+                                             <http://w3id.org/mmv/#DesignActivity> ;
+                                    <http://www.w3.org/ns/prov#used> <http://w3id.org/mmv/#MapV2> ;
+                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> ;
+                                    <http://purl.org/dc/terms/description> "URIs: /ed/{code}; SKOS hierarchy." .
+
+
+###  http://w3id.org/mmv/#Proj1_Dev
+<http://w3id.org/mmv/#Proj1_Dev> rdf:type owl:NamedIndividual ,
+                                          <http://w3id.org/mmv/#DevelopmentActivity> ;
+                                 <http://www.w3.org/ns/prov#generated> <http://w3id.org/mmv/#MapV2> ;
+                                 <http://www.w3.org/ns/prov#used> <http://w3id.org/mmv/#RMLMapper> ;
+                                 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> .
+
+
+###  http://w3id.org/mmv/#Proj1_Mint
+<http://w3id.org/mmv/#Proj1_Mint> rdf:type owl:NamedIndividual ,
+                                           <http://w3id.org/mmv/#MaintenanceActivity> ;
+                                  <http://www.w3.org/ns/prov#generated> <http://w3id.org/mmv/#MapV3> ;
+                                  <http://www.w3.org/ns/prov#used> <http://w3id.org/mmv/#MapV2> ;
+                                  <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> .
+
+
+###  http://w3id.org/mmv/#Proj1_Test
+<http://w3id.org/mmv/#Proj1_Test> rdf:type owl:NamedIndividual ,
+                                           <http://w3id.org/mmv/#TestingActivity> ;
+                                  <http://w3id.org/mmv/#testsArtifact> <http://w3id.org/mmv/#MapV2> ;
+                                  <http://www.w3.org/ns/prov#generated> <http://w3id.org/mmv/#Viol1> ;
+                                  <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> .
+
+
+###  http://w3id.org/mmv/#RMLMapper
+<http://w3id.org/mmv/#RMLMapper> rdf:type owl:NamedIndividual ,
+                                          <https://alex-randles.github.io/MQV/#MappingTool> ;
+                                 owl:versionInfo "2"^^xsd:positiveInteger .
+
+
+###  http://w3id.org/mmv/#Sara_Agent
+<http://w3id.org/mmv/#Sara_Agent> rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/ns/prov#Agent> ,
+                                           <http://xmlns.com/foaf/0.1/Person> ;
+                                  <http://www.w3.org/ns/prov#wasAssociatedWith> <http://w3id.org/mmv/#Sara_Agent> ;
+                                  rdfs:label "Sara_Agent" ;
+                                  <http://xmlns.com/foaf/0.1/name> "Sara Alzahrani" .
+
+
+###  http://w3id.org/mmv/#Viol1
+<http://w3id.org/mmv/#Viol1> rdf:type owl:NamedIndividual ,
+                                      <https://alex-randles.github.io/MQV/#MappingValidationReport> .
+
+
+###  http://w3id.org/mmv/#WardsCSV_2022
+<http://w3id.org/mmv/#WardsCSV_2022> rdf:type owl:NamedIndividual ,
+                                              <http://w3id.org/mmv/#DataSet> ;
+                                     <http://purl.org/dc/terms/description> "CSO 2022 Electoral Divisions dataset in CSV format." ;
+                                     <http://purl.org/dc/terms/type> "mmv:DataSet" .
+
+
+###  http://www.w3.org/TR/vocab-dqv/
+<http://www.w3.org/TR/vocab-dqv/> rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3.org/ns/dqv
+<http://www.w3.org/ns/dqv> rdf:type owl:NamedIndividual ,
+                                    <http://purl.org/vocommons/voaf#Vocabulary> ;
+                           <http://purl.org/dc/terms/contributor> [ <http://xmlns.com/foaf/0.1/name> "Amrapali Zaveri"
+                                                                  ] ,
+                                                                  [ <http://xmlns.com/foaf/0.1/name> "Nandana Mihindukulasooriya"
+                                                                  ] ,
+                                                                  [ <http://xmlns.com/foaf/0.1/name> "Makx Dekkers"
+                                                                  ] ,
+                                                                  [ <http://xmlns.com/foaf/0.1/name> "Deirdre Lee"
+                                                                  ] ,
+                                                                  [ <http://xmlns.com/foaf/0.1/name> "Christophe Guéret"
+                                                                  ] ,
+                                                                  [ <http://xmlns.com/foaf/0.1/name> "Jeremy Debattista"
+                                                                  ] ;
+                           <http://purl.org/dc/terms/created> "2015-12-17"^^xsd:date ;
+                           <http://purl.org/dc/terms/creator> [ <http://xmlns.com/foaf/0.1/name> "Antoine Isaac"
+                                                              ] ,
+                                                              [ <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni"
+                                                              ] ;
+                           <http://purl.org/dc/terms/description> "The Data Quality Vocabulary (DQV) is seen as an extension to DCAT to cover the quality of the data, how frequently is it updated, whether it accepts user corrections, persistence commitments etc. When used by publishers, this vocabulary will foster trust in the data amongst developers."@en ;
+                           <http://purl.org/dc/terms/modified> "2016-08-26"^^xsd:date ,
+                                                               "2016-12-15"^^xsd:date ;
+                           <http://purl.org/dc/terms/publisher> <http://www.w3.org/data#W3C> ;
+                           <http://purl.org/dc/terms/title> "Data Quality Vocabulary"@en ;
+                           <http://purl.org/dc/terms/type> <http://purl.org/adms/assettype/Ontology> ;
+                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "dqv" ;
+                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3.org/ns/dqv#" ;
+                           <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/TR/vocab-dqv/> .
+
+
+###  http://www.w3.org/ns/dqv#computedOn
+:computedOn rdf:type owl:NamedIndividual ,
+                     <http://purl.org/linked-data/cube#DimensionProperty> .
+
+
+###  http://www.w3.org/ns/dqv#isMeasurementOf
+:isMeasurementOf rdf:type owl:NamedIndividual ,
+                          <http://purl.org/linked-data/cube#DimensionProperty> .
+
+
+###  http://www.w3.org/ns/dqv#precision
+:precision rdf:type owl:NamedIndividual ,
+                    :Dimension ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Precision is a quality dimension, which refers to the recorded level of details. It represents the exactness of a measurement or description. It is equivalent the notion of Precision from ISO 25012."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Precision"@en .
+
+
+###  http://www.w3.org/ns/dqv#qualityAssessment
+:qualityAssessment rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/ns/oa#Motivation> ;
+                   <http://purl.org/vocab/vann/usageNote> "Whenever DQV implementers need to extend the motivations for quality annotations, they should follow the instructions provided by the Web Annotation Data Model, and the concepts in the extension should be defined as specializations of dqv:qualityAssessment."@en ;
+                   <http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/ns/oa#assessing> ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Motivation that must be specified for quality annotations."@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Quality assessment"@en .
+
+
+###  http://www.w3.org/ns/dqv#value
+:value rdf:type owl:NamedIndividual ,
+                <http://purl.org/linked-data/cube#MeasureProperty> .
+
+
+[ <http://xmlns.com/foaf/0.1/name> "Makx Dekkers"
+] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Nandana Mihindukulasooriya"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Jeremy Debattista"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Amrapali Zaveri"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Christophe Guéret"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Antoine Isaac"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Antoine Isaac"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Nandana Mihindukulasooriya"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Makx Dekkers"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Deirdre Lee"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Deirdre Lee"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Riccardo Albertoni"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Amrapali Zaveri"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Christophe Guéret"
+ ] .
+
+[ <http://xmlns.com/foaf/0.1/name> "Jeremy Debattista"
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:computedOn rdfs:comment "Refers to the resource (e.g., a dataset, a linkset, a graph, a set of triples) on which the quality measurement is performed. In the DQV context, this property is generally expected to be used in statements in which objects are instances of dcat:Dataset or dcat:Distribution."@en ;
+             rdfs:label "computed on"@en .
+
+
+:isMeasurementOf rdfs:comment "Indicates the metric being observed."@en ;
+                 rdfs:label "is measurement of"@en .
+
+
+:value rdfs:comment "Refers to values computed by metric."@en ;
+       rdfs:label "value"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
